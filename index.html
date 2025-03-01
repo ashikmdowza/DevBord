@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevBoard</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-[#F4F7FF] p-6">
+
+    <!-- Navbar -->
+    <div class=" container mx-auto navbar bg-white shadow-md rounded-lg p-4 mb-4">
+        <div class="flex-1">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-xl font-bold">Dev<span class="text-blsck-800">Board</span></h1>
+        </div>
+        <div class="flex-none gap-10">
+            <div class="flex gap-2 bg-gray-100 rounded-full text-sm">
+            <img class="" src="assets/checkbox.png" alt="">
+            <h1 id="increase-display" class="text-xl font-bold">23</h1>
+            </div>
+            <button><img src="assets/theme-btn.png" alt=""></button>
+        </div>
+    </div>
+    <main>
+      <section>
+        <!-- div for the whole box -->
+        <div class="flex m bg-white container mx-auto">
+          <!-- rirgt side -->
+          <div class="w-[80%] ">
+            <div class="grid grid-cols-4 gap-4 mt-6">
+              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex items-center space-x-20">
+                <img src="assets/checkbox.png" alt="">
+                <div>
+                  <p class="">Task Assigned</p>
+                  <h1 id="number-display" class="font-bold text-3xl">05</h1>
+                </div>
+              </div>
+              <div class="  col-span-2 bg-gradient-to-r from-blue-500 to-blue-300 text-white p-4 rounded-lg shadow-md flex justify-center items-center text-lg font-semibold gap-2">
+                <img src="assets/board.png" alt="">
+                  <h1>  Discover Something <br>New Today!</h1>
+              </div>
+              <div class="bg-gray-100 p-4 rounded-lg shadow-md flex items-center gap-10">
+                  <img src="assets/calender.png" alt="">
+                  <h3>Wed <br><span class="font-bold text-2xl"> jul 28 2026</span></h3>
+              </div>
+              
+          </div>
+          <!-- card -->
+          <div class="ml-6">
+            <div class="grid grid-cols-3 gap-4 mt-6 ">
+              <div class="bg-[#F4F7FF] mt-4 card shadow-md p-4">
+                <button class="btn bg-white w-1/2">ShopeEase</button>
+                <h2 class="font-semibold text-2xl mt-2">Fix Mobile Button Issue </h2>
+                <p class="mt-4 bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="flex gap-6 mt-4">
+                 <div>
+                  <p>Deadline</p>
+                  <h3>21 March 2025</h3>
+                 </div>
+                 <button class="btn btn-click btn-primary">Completed</button>
+            
+                </div>
+            
+              </div>
+              <div class="bg-[#F4F7FF] mt-4 card shadow-md p-4">
+                <button class="btn bg-white w-1/2">ShopeEase</button>
+                <h2 class="font-semibold text-2xl mt-2">Fix Mobile Button Issue </h2>
+                <p class="mt-4 bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="flex gap-6 mt-4">
+                 <div>
+                  <p >Deadline</p>
+                  <h3>21 March 2025</h3>
+                 </div>
+                 <button class="btn btn-click btn-primary">Completed</button>
+            
+                </div>
+            
+              </div>
+              <div class="bg-[#F4F7FF] mt-4 card shadow-md p-4">
+                <button class="btn bg-white w-1/2">ShopeEase</button>
+                <h2 class="font-semibold text-2xl mt-2">Fix Mobile Button Issue </h2>
+                <p  class="mt-4 bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="flex gap-6 mt-4">
+                 <div>
+                  <p>Deadline</p>
+                  <h3>21 March 2025</h3>
+                 </div>
+                 <button class="btn btn-click  btn-primary">Completed</button>
+            
+                </div>
+            
+              </div>
+             </div>
+             <div class="grid grid-cols-3 gap-4 mt-6 ">
+              <div class="bg-[#F4F7FF] mt-4 card shadow-md p-4">
+                <button class="btn bg-white w-1/2">ShopeEase</button>
+                <h2 class="font-semibold text-2xl mt-2">Fix Mobile Button Issue </h2>
+                <p  class="mt-4 bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="flex gap-6 mt-4">
+                 <div>
+                  <p>Deadline</p>
+                  <h3>21 March 2025</h3>
+                 </div>
+                 <button class="btn btn-click btn-primary">Completed</button>
+            
+                </div>
+            
+              </div>
+              <div class="bg-[#F4F7FF] mt-4 card shadow-md p-4">
+                <button class="btn bg-white w-1/2">ShopeEase</button>
+                <h2 class="font-semibold text-2xl mt-2">Fix Mobile Button Issue </h2>
+                <p  class="mt-4 bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="flex gap-6 mt-4">
+                 <div>
+                  <p >Deadline</p>
+                  <h3>21 March 2025</h3>
+                 </div>
+                 <button class="btn btn-click btn-primary">Completed</button>
+            
+                </div>
+            
+              </div>
+              <div class="bg-[#F4F7FF] mt-4 card shadow-md p-4">
+                <button class="btn bg-white w-1/2">ShopeEase</button>
+                <h2 class="font-semibold text-2xl mt-2">Fix Mobile Button Issue </h2>
+                <p  class="mt-4 bg-white rounded-lg p-4">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                <div class="flex gap-6 mt-4">
+                 <div>
+                  <p>Deadline</p>
+                  <h3>21 March 2025</h3>
+                 </div>
+                 <button class="btn btn-click btn-primary">Completed</button>
+            
+                </div>
+            
+              </div>
+             </div>
+          </div>
+          </div>
+          <!-- left side -->
+           <div class="w-[20%] items-center  card bg-white shadow-md p-4">
+            <div class="flex text-center gap-2">
+              <div>
+                <img src="assets/activity.png" alt="">
+              </div>
+              <h3 class="font-semibold text-xl text-center">Activity Log</h3>
+            </div>
+            <button class="btn btn-primary mt-4">Clear History</button>
+            <p id="time-message" class="text-sm">Current time is :</p>
+           </div>
+          
+           
+        </div>
+      </section>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
