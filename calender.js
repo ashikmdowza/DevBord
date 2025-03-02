@@ -1,5 +1,8 @@
-function updateCalendar() {
+function updateDateTime() {
     const now = new Date();
+    const options = { timeZone: 'America/New_York', hour12: true, hour: 'numeric', minute: 'numeric', second: 'numeric' };
+    const timeString = new Intl.DateTimeFormat('en-US', options).format(now);  
+
     const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
     const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
@@ -8,14 +11,8 @@ function updateCalendar() {
     const date = now.getDate();
     const year = now.getFullYear();
 
-    const calendarElement = document.getElementById('calendar');
-    calendarElement.textContent = `${dayName}, ${monthName} ${date}, ${year}`;
+    document.getElementById('datetime').textContent = `${dayName}, ${monthName} ${date}, ${year} - ${timeString}`;
 }
 
-// Update the calendar immediately
-updateCalendar();
-
-// Update the calendar every minute (optional)
-setInterval(updateCalendar, 60000);
-   // go back button
-  
+setInterval(updateDateTime, 1000);
+updateDateTime();
