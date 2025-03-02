@@ -3,3 +3,9 @@
   font-weight: 100;
   font-style: normal;
 }
+.time-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px; /* 10px gap between boxes */
+    background-color: #f9f9f9;
+  }
