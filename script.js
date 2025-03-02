@@ -31,16 +31,16 @@ document.addEventListener("DOMContentLoaded", function () {
             increaseNumber++;
             increaseDisplay.textContent = increaseNumber;
 
-            // Get the task name and time
+            
             let taskName = button.parentElement.parentElement.querySelector("h2").innerText;
             let currentTime = new Date().toLocaleTimeString();
 
-            // Create log entry
+         
             let logEntry = document.createElement("p");
             logEntry.innerText = `${taskName} completed at - ${currentTime}`;
             logEntry.classList.add("text-sm","text-black", "mt-1","gap-2");
 
-            // Append to Activity Log
+        
             activityLog.appendChild(logEntry);
 
             if (number == 0) {
